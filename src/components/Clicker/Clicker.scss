@@ -1,0 +1,95 @@
+@use 'function' as f;
+@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@900&display=swap');
+
+.clicker {
+  font-family: 'Mr Dafoe';
+  height: 100vh;
+  text-align: center;
+  background: linear-gradient(to right, #4168a5, #ba70a9);
+  overflow-x: hidden;
+
+  h1 {
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 5.5em;
+    color: white;
+    text-shadow: 0 0 0.05em #fff, 0 0 0.2em #fe05e1, 0 0 0.3em #fe05e1;
+    transform: rotate(-7deg);
+  }
+
+  h2 {
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 5.5em;
+    color: white;
+    text-shadow: 0 0 0.05em #fff, 0 0 0.2em hwb(234 2% 37%), 0 0 0.3em #fe05e1;
+    transform: rotate(-7deg);
+  }
+
+  button {
+    width: 200px;
+    background: transparent;
+    border: f.rem(2) solid transparent;
+    text-align: center;
+    font-size: f.rem(50);
+    min-height: 100px;
+    border-radius: f.rem(15);
+    padding: f.rem(10) f.rem(25);
+    min-width: 100px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: all 0.05s ease-in-out;
+    font-family: 'Mr Dafoe';
+
+    &.minus {
+      height: 50px;
+      background: linear-gradient(45deg, #ff3500 0%, #1c6ea4 50%, #021502 100%);
+      color: #fff;
+      box-shadow: 0 4px 0 darken(#ff3500, 10%);
+      border: 1px solid darken(#ff3500, 15%);
+
+      color: white;
+      text-shadow: 0 0 0.05em #fff, 0 0 0.2em hwb(234 2% 37%), 0 0 0.3em #fe05e1;
+      order: 2;
+    }
+
+    &.plus {
+      height: 50px;
+      background: linear-gradient(45deg, #021502 0%, #1c6ea4 50%, #14c513 100%);
+      color: #fff;
+      box-shadow: 0 4px 0 darken(#201d86, 10%);
+      border: 1px solid darken(#201d86, 15%);
+
+      color: white;
+      text-shadow: 0 0 0.05em #fff, 0 0 0.2em hwb(234 2% 37%), 0 0 0.3em #fe05e1;
+      order: 1;
+    }
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+
+    &:active {
+      transform: translateY(2px);
+      box-shadow: none;
+    }
+    &.back {
+      margin-top: 20px;
+      width: auto;
+      color: #ffffff;
+
+      text-shadow: 0 0 15px #fff, 0 0 20px #49ff18, 0 0 30px #49ff18,
+        0 0 40px #49ff18, 0 0 55px #49ff18, 0 0 75px #49ff18;
+      color: #ffffff;
+    }
+  }
+}
+@media (max-width: 448px) {
+  .grBtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}
