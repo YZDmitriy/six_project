@@ -13,6 +13,9 @@ export const Home = () => {
             <Link to='/clicker'>Clicker</Link>
           </li>
           <li>
+            <Link to='/modal_window'>Modal Window</Link>
+          </li>
+          <li>
             <a
               href='https://github.com/YZDmitriy'
               target='_blank'
