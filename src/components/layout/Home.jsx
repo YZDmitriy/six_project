@@ -16,6 +16,9 @@ export const Home = () => {
             <Link to='/modal_window'>Modal Window</Link>
           </li>
           <li>
+            <Link to='/quiz_game'>Quiz Game</Link>
+          </li>
+          <li>
             <a
               href='https://github.com/YZDmitriy'
               target='_blank'
