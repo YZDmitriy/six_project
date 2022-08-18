@@ -19,6 +19,9 @@ export const Home = () => {
             <Link to='/quiz_game'>Quiz Game</Link>
           </li>
           <li>
+            <Link to='/users_card'>Users Card</Link>
+          </li>
+          <li>
             <a
               href='https://github.com/YZDmitriy'
               target='_blank'
