@@ -22,6 +22,9 @@ export const Home = () => {
             <Link to='/users_card'>Users Card</Link>
           </li>
           <li>
+            <Link to='/convertor_cur'>Convertor currency</Link>
+          </li>
+          <li>
             <a
               href='https://github.com/YZDmitriy'
               target='_blank'
