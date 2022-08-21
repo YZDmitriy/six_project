@@ -5,6 +5,7 @@ import { ModalWindow } from './components/ModalWindow/ModalWindow';
 import { Quiz } from './components/Quiz/Quiz';
 import { UsersCard } from './components/UsersCard/UsersCard';
 import { Convertor } from './components/Convertor/Convertor';
+import { Photo } from './components/PhotoAlbum/Photo';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/quiz_game' element={<Quiz/>} />
         <Route path='/users_card' element={<UsersCard/>} />
         <Route path='/convertor_cur' element={<Convertor/>} />
+        <Route path='/photo_album' element={<Photo/>} />
       </Routes>
     </>
   );

@@ -25,6 +25,9 @@ export const Home = () => {
             <Link to='/convertor_cur'>Convertor currency</Link>
           </li>
           <li>
+            <Link to='/photo_album'>Photo Ambum</Link>
+          </li>
+          <li>
             <a
               href='https://github.com/YZDmitriy'
               target='_blank'
