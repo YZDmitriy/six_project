@@ -5,7 +5,7 @@ export const Home = () => {
   return (
     <nav className='header'>
       <div className='nav-wrapper'>
-          <h1>Six project</h1>
+          <h1>Six projects ReactJS</h1>
         <div className="cardPrj">
         <Link to='/clicker'><div className='clickPrj'><p>Clicker</p></div></Link>
         <Link to='/modal_window'><div className='modalPrj'><p>Modal Window</p></div></Link>
