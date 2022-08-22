@@ -38,7 +38,7 @@ export const Photo = () => {
 
   return (
     <div className='photo_album'>
-      <h1>Моя коллекция фотографий</h1>
+      <h1>My Photo Album</h1>
       <div className='top'>
         <ul className='tags'>
           {photoCat.map((obj, i) => (
@@ -55,12 +55,12 @@ export const Photo = () => {
           value={searchValue}
           onChange={(e) => setSearchValue(e.target.value)}
           className='search-input'
-          placeholder='Поиск по названию'
+          placeholder='Search...'
         />
       </div>
       <div className='content'>
         {isLoading ? (
-          <h2>Идет загрузка...</h2>
+          <h2>Loading...</h2>
         ) : (
           collections
             .filter((obj) =>
